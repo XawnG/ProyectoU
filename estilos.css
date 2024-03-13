@@ -1,0 +1,29 @@
+.Titulos{
+    font-family: Georgia;
+    color: #41abf1;
+}
+
+.Parrafos{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.Contenedor1{
+    background-color: #9ed0f1;
+    width: 30%;
+    height: 115%;
+    position: absolute;
+    top: auto;
+    left: 50px;
+    
+}
+
+.Contenedor2{
+    background-color: #9ed0f1;
+    position: relative;
+    top: auto;
+    left: 680px;
+    width: 60%;
+    height: 100%;
+    text-align: justify;
+}
