@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mi Perfil Web</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+<body style="background-color: #ffeffc;">
+    <div class="General">
+    <ul class="menu">
+        <li id="lista"><a class="active" href="index.html">Perfil</a></li>
+        <li id="lista"><a href="Contacto.html">Contacto</a></li>
+        <li id="lista"><a href="Juegos.html">Lista Juegos</a></li>
+        
 
-<body style="background-color: #FFEBFB;">
-    <div class="Contenedor1"><center>
+    </ul>
+
+
+<div class="Contenedor1">
+    <div>
         <h1 class="Titulos">
-            PERFIL
+        PERFIL
         </h1>
         <img src="gatibaby.jpg" alt="" width="25%" height="25%" />
         
         <h2 class="Titulos">
-            Nombre
+        Nombre
         </h2>
         <p class="Parrafos">Juan Pablo Galván Varela.</p>
         <h2 class="Titulos">
-            Fecha de Nacimiento
+        Fecha de Nacimiento
         </h2>
         <p class="Parrafos">3 de Abril de 2005.</p>
         <h2 class="Titulos">
-            Edad
+        Edad
         </h2>
         <p class="Parrafos">18 años.</p>
         <h2 class="Titulos">
@@ -32,94 +41,49 @@
         </h2>
         <p class="Parrafos">Videojuegos, animales, animes, arte y comida.</p>
         <h2 class="Titulos">
-            Pasatiempos
+        Pasatiempos
         </h2>
         <p class="Parrafos">Jugar videojuegos, ver anime y leer mangas.</p>
-       
-        
         <h2 class="Titulos">
-            Comida favorita
+        Comida favorita
         </h2>
         <p class="Parrafos">Spaghetti a la bolognesa.</p>
         <img src="spaghetti.jpg" alt="" width="30%" height="30%">
         <p class="Parrafos"><a href="https://www.freepik.com/free-ai-image/homemade-fettuccine-with-bolognese-sauce-parmesan-generated-by-ai_41280696.htm#query=bolognese&position=6&from_view=keyword&track=sph&uuid=cbd609b3-8f5d-4370-bd18-bd363bf8fa9c"></a></p>
         <h2 class="Titulos">
-            Color favorito
+        Color favorito
         </h2>
         <p class="Parrafos">Los colores pastel.</p>
-        <h2 class="Titulos">Contacto</h2>
-        <a href="Contacto.html">Formulario de Contacto</a>
-    </center>
+    
     </div>
+</div>
 
-        <div class="Contenedor2">
-        <h2 class="Titulos">
-            Datos curiosos 
-        </h2>
-        <p class="Parrafos"> 1. De pequeño era alérgico a los animales pero el deseo de tener un gato me quitó la alergia. </p>
-        <p class="Parrafos"> 2. El día antes que naciera murió Juan Pablo II. </p>
-        <p class="Parrafos"> 3. Tengo tres perros y dos gatos. </p>
-        <p class="Parrafos"> 4. He visto 450 animes y leído 20 mangas. </p>
-        <p class="Parrafos"> 5. Me encantan los juegos de modo historia. </p>
-        <p class="Parrafos"> 6. Mis superheroes favoritos son Iron Man, Batman y Spiderman. </p>
-        <p class="Parrafos"> 7. Me encantan muchos géneros musicales por lo cual no tengo artista o canción favorita. </p>
-        
-         <h2 class="Titulos">
-            Frases favoritas 
 
-        </h2>
-        <p class="Parrafos"> "No son las habilidades lo que demuestra lo que somos, son nuestras decisiones" - Harry Potter </p>
-        <p class="Parrafos"> "Vive cada día como si fuera el último, porque un día de estos lo será" - Spiderman </p>
-        <p class="Parrafos"> "Mi padre lloró el día en que nací porque sabía que nunca iba a ser mejor que yo" - Iron Man </p>
-        <p class="Parrafos"> "¿Por qué nos caemos? Para que podamos aprender a recuperarnos" - Batman </p>
-        <p class="Parrafos"> "Levántate y camina hacia adelante, tienes las piernas para hacerlo" - Edwar Elric (FullMetal Alchemist) </p>
-        <p class="Parrafos"> "¡Un héroe es alguien que supera cada obstáculo que la vida pone en su camino!" - All Might (My Hero Academia) </p>
-        <center>
-            <table>
-                <tr>
-                    <td valign="middle" style="display: inline-block; position:absolute; left:100px;">
-                        <img src="liesofp.jpg" alt="liesofp" width="30%" height="30%">
-                        
-                    </td>
-                    <td valign="center" style="display: inline-block; position: absolute; left: 690px; bottom: auto;">
-                        <img src="totoro.jpg" alt="anime" width="90%" height="90%">
-                    </td>
-                    <td style="display: inline-block;">
-                        <a href="deku1.jpg">
-                        <img src="deku1.jpg" alt="manga" width="250" height="300">
-                        </a>
-                    </td>
-                </tr> 
-    </table>
-     <h2 class="Titulos">
-        Piedra, Papel o Tijeras 
+<div class="Contenedor2">
+    <h2 class="Titulos">
+    Datos curiosos 
     </h2>
-    <p class="Parrafos">Selecciona una opción:</p>
-    <button onclick="play('piedra')">Piedra</button>
-    <button onclick="play('papel')">Papel</button>
-    <button onclick="play('tijeras')">Tijeras</button>
-    <p id="result"></p>
-
-    <script>
-        function play(userChoice) {
-            var choices = ['piedra', 'papel', 'tijeras'];
-            var computerChoice = choices[Math.floor(Math.random() * choices.length)];
-
-            var result = '';
-
-            if (userChoice === computerChoice) {
-                result = "Empate";
-            } else if ((userChoice === 'piedra' && computerChoice === 'tijeras') ||
-                       (userChoice === 'papel' && computerChoice === 'piedra') ||
-                       (userChoice === 'tijeras' && computerChoice === 'papel')) {
-                result = "¡Ganaste!";
-            } else {
-                result = "¡Perdiste!";
-            }
-
-            document.getElementById('result').innerText = `Elegiste ${userChoice}, la computadora eligió ${computerChoice}. ${result}`;
-        }
-    </script>
+    <p class="Parrafos"> 1. De pequeño era alérgico a los animales pero el deseo de tener un gato me quitó la alergia. </p>
+    <p class="Parrafos"> 2. El día antes que naciera murió Juan Pablo II. </p>
+    <p class="Parrafos"> 3. Tengo tres perros y dos gatos. </p>
+    <p class="Parrafos"> 4. He visto 450 animes y leído 20 mangas. </p>
+    <p class="Parrafos"> 5. Me encantan los juegos de modo historia. </p>
+    <p class="Parrafos"> 6. Mis superheroes favoritos son Iron Man, Batman y Spiderman. </p>
+    <p class="Parrafos"> 7. Me encantan muchos géneros musicales por lo cual no tengo artista o canción favorita. </p>
+    <h2 class="Titulos">
+    Frases favoritas 
+    </h2>
+    <p class="Parrafos"> "No son las habilidades lo que demuestra lo que somos, son nuestras decisiones" - Harry Potter </p>
+    <p class="Parrafos"> "Vive cada día como si fuera el último, porque un día de estos lo será" - Spiderman </p>
+    <p class="Parrafos"> "Mi padre lloró el día en que nací porque sabía que nunca iba a ser mejor que yo" - Iron Man </p>
+    <p class="Parrafos"> "¿Por qué nos caemos? Para que podamos aprender a recuperarnos" - Batman </p>
+    <p class="Parrafos"> "Levántate y camina hacia adelante, tienes las piernas para hacerlo" - Edwar Elric (FullMetal Alchemist) </p>
+    <p class="Parrafos"> "¡Un héroe es alguien que supera cada obstáculo que la vida pone en su camino!" - All Might (My Hero Academia) </p>
+    <div class="imagen1"><img src="liesofp.jpg" alt="Jueguito" height="100%" ></div>
+    <div class="imagen1"><img src="totoro.jpg" alt="totoro-san" height="100%"></div>
+    <div class="imagen1"><a href="deku1.jpg"><img src="deku1.jpg" alt="BNHA" height="300px"></a></div>
+     
+    <center>
     <p class="Parrafos"><strong>¡Me gustó la página! </strong></p>
     <img id="heart" src="heart.png" alt="Me gusta" onclick="like()" width="50" height="50">
     <p id="likes">0</p>
@@ -135,7 +99,9 @@
                 liked = true;
             }
         }
-    </script></center>
+    </script>
+    </center>
     </div>
+</div>
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body style="background-color: #ffeffc;">
+    <header>
+        <ul class="menu">
+            <li id="lista"><a href="index.html">Perfil</a></li>
+            <li id="lista"><a href="Contacto.html">Contacto</a></li>
+            <li id="lista"><a class="active" href="Juegos.html">Lista Juegos</a></li>
+            
+    
+        </ul>
+    </header>
+    <center>
+    <h2 class="Titulos">
+        Piedra, Papel o Tijeras 
+        </h2>
+        <p class="Parrafos">Selecciona una opción:</p>
+        <button onclick="play('piedra')">Piedra</button>
+        <button onclick="play('papel')">Papel</button>
+        <button onclick="play('tijeras')">Tijeras</button>
+        <p id="result"></p>
+        <script>
+            function play(userChoice) {
+                var choices = ['piedra', 'papel', 'tijeras'];
+                var computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    
+                var result = '';
+    
+                if (userChoice === computerChoice) {
+                    result = "Empate";
+                } else if ((userChoice === 'piedra' && computerChoice === 'tijeras') ||
+                           (userChoice === 'papel' && computerChoice === 'piedra') ||
+                           (userChoice === 'tijeras' && computerChoice === 'papel')) {
+                    result = "¡Ganaste!";
+                } else {
+                    result = "¡Perdiste!";
+                }
+    
+                document.getElementById('result').innerText = `Elegiste ${userChoice}, la computadora eligió ${computerChoice}. ${result}`;
+            }
+        </script>
+        </center>
+</body>
+</html>

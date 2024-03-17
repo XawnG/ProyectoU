@@ -4,17 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Formulario de Contacto</title>
+<link rel="stylesheet" href="estilos.css">
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #FFEBFB;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+  
 
   .container {
     background-color: #f7f0f5;
@@ -65,8 +57,18 @@
   }
 </style>
 </head>
-<body>
 
+<body style="background-color: #ffeffc;;">
+  <header>
+    <ul class="menu">
+        <li id="lista"><a href="index.html">Perfil</a></li>
+        <li id="lista"><a class="active" href="Contacto.html">Contacto</a></li>
+        <li id="lista"><a href="Juegos.html">Lista Juegos</a></li>
+        
+
+    </ul>
+</header>
+<div class="body1">
 <div class="container">
   <h2>Formulario de Contacto</h2>
   <form action="https://formspree.io/f/xoqglbbv" method="POST">
@@ -84,6 +86,7 @@
   <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br><br>
   <input type="submit" value="Enviar">
   </form>
+</div>
 </div>
 
 </body>

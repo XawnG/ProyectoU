@@ -1,6 +1,8 @@
+
 .Titulos{
     font-family: Georgia;
-    color: #41abf1;
+    color: #0062a3;
+    text-align: center;
 }
 
 .Parrafos{
@@ -8,22 +10,90 @@
     
 }
 
+Body{
+  width: auto;
+  height: 100%;
+  background-color: rgb(190, 2, 2);
+  position: relative;
+  margin: 20px;
+  transform: translate(20px);
+  padding: 0;
+}
 .Contenedor1{
-    background-color: #9ed0f1;
-    width: 30%;
-    height: 115%;
-    position: absolute;
-    top: auto;
-    left: 50px;
-    
+ position: absolute;
+  background-color: #b3daf5;
+  width: 500px;
+  height: 1020px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
 }
 
 .Contenedor2{
-    background-color: #9ed0f1;
-    position: relative;
-    top: auto;
-    left: 680px;
-    width: 60%;
-    height: 100%;
+  align-self: auto;
+    position: absolute;
+    left: 500px;
+    background-color: #b3daf5;
+    width: 1200px;
+    height: 1020px;
+    margin-top: 10px;
+    margin-left: 20px;
     text-align: justify;
+    border-radius: 5px;
+    align-content: center;
 }
+
+.menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #41abf1;
+    display: inherit;
+    width: 1720px;
+    border-radius: 5px;
+}
+
+#lista{
+    float: left;
+    border-right: 3px solid #FFEBFB;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    background-color: #fac6f0;
+  }
+
+  .active {
+    background-color: #fac6f0;
+  }
+
+  .body1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.imagen1{
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  
+}
+
+ 
