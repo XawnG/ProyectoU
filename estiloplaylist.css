@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  html {
+    height: 100%;
+  }
+  
+  
+  @media (min-width: 0px) {
+    .text-container {
+        padding: 0px 0;
+        text-align: center;
+      }
+      
+      .text-container h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+      }
+      
+      .text-container .text-gradient {  
+        color: transparent;
+        background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
+         background-clip: text;
+          background-clip: text;
+        animation: color 3s linear infinite; 
+        background-size: 500%;  
+        transform: translate3d(0,0,0);
+        backface-visibility: hidden;
+      }
+      
+      .text-container .text-pattern {  
+        color: transparent;
+        background-color: #DC143C;
+        background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
+         background-clip: text;
+          background-clip: text;   
+        animation: color 50s linear infinite; 
+        background-size: 200%;  
+        transform: translate3d(0,0,0);
+          backface-visibility: hidden;
+      }
+      
+      @keyframes color {
+        from { 
+          background-position: 0% 50%;
+        }
+        to { 
+          background-position: 100% 50%; 
+        }
+      }
+  }
+  
+  body {
+      background-color: #ffeffc;
+      min-height: 100%;
+  }
+  
+  .grid-container > * {
+    border-radius: 4px;
+    padding: 0px;
+    text-align: left;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  
+  .header {
+    grid-area: header;
+    
+  }
+  
+  .navbar {
+    grid-area: navbar;
+    background-color: #b3daf5;
+  }
+  
+  .sidebar{
+    grid-area: sidebar;
+    background-color: #b3daf5;
+  }
+
+  .main {
+    grid-area: main;
+    background-color: #ffeffc;
+    font-family: 'Fredoka One';
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 20px;
+    grid-template:
+      "header"  30px
+      "main"    auto
+      
+  }
+  @media (min-width: 600px) {
+    .musica{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 40px;
+      margin-left: 30px;
+      gap: 10px;
+      width: 100%;
+  }
+  }
+  @media (min-width: 600px) {
+    .grid-container {
+      
+      grid-template:
+        "header header header" 30px
+        "navbar main sidebar"   auto/
+        10px auto 10px;
+    }
+    iframe{
+        width: auto;
+        height: 352px;
+        
+      }
+  }
+
+  @media (min-width: 1300px) {
+    .musica{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 40px;
+      gap: 10px;
+      width: 100%;
+  }
+  }
+  
+  @media (min-width: 1300px) {
+    .grid-container {
+      grid-template:
+        "header header header"  30px
+        "navbar main    sidebar" auto    /
+        150px auto  150px ;
+    }
+    iframe{
+        width: auto;
+        height: 352px;
+      }
+    
+  }
+  
+  .menu{
+      font-family: Arial, Helvetica, sans-serif;
+      list-style-type: none;
+      overflow: hidden;
+      background-color: #41abf1;
+      display: grid;
+      grid-template-columns: 100px 100px 100px 0px;
+      border-radius: 10px;
+  }
+  
+  #lista{
+      float: left;
+      border-right: 3px solid #FFEBFB;
+  }
+  
+  li a, .dropbtn  {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  li a:hover,  .dropdown:hover .dropbtn {
+      background-color: #fac6f0;
+    }
+  
+  .active {
+      background-color: #fac6f0;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #41abf1;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 1px;
+    
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #fac6f0;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  

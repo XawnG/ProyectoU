@@ -86,7 +86,7 @@ body {
     overflow: hidden;
     background-color: #41abf1;
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 0px;
     border-radius: 10px;
 }
 
