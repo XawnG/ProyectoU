@@ -26,7 +26,7 @@
       .text-container .text-gradient {  
         color: transparent;
         background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);
-         background-clip: text;
+        background-clip: text;
           background-clip: text;
         animation: color 3s linear infinite; 
         background-size: 500%;  
@@ -38,7 +38,7 @@
         color: transparent;
         background-color: #DC143C;
         background-image: repeating-linear-gradient(45deg,    transparent, transparent 25px,        rgba(255,255,255,.5) 25px, rgba(255,255,255,.5) 50px);
-         background-clip: text;
+        background-clip: text;
           background-clip: text;   
         animation: color 50s linear infinite; 
         background-size: 200%;  
@@ -54,6 +54,18 @@
           background-position: 100% 50%; 
         }
       }
+  }
+  @media (max-width: 599px) {
+    .musica{
+      display: grid;
+      place-items: center;
+      width: 100%;
+      margin: 10%;
+    }
+    iframe{
+      height: 170px;
+      width: 100%;
+    }
   }
   
   body {
@@ -77,12 +89,12 @@
   
   .navbar {
     grid-area: navbar;
-    background-color: #b3daf5;
+    background-color: #ffeffc;
   }
   
   .sidebar{
     grid-area: sidebar;
-    background-color: #b3daf5;
+    background-color: #ffeffc;
   }
 
   .main {
@@ -124,12 +136,12 @@
       }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: 1000px) {
     .musica{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      margin-top: 40px;
       gap: 10px;
+      margin: 10px;
       width: 100%;
   }
   }
